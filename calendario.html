@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendario</title>
+
+        <link rel="stylesheet" href="calendar-style.css">
+    </head>
+    <body>
+        
+        <div id="contenedor">
+            <div id="header">
+                <div id="CambioDeMes"></div>
+                <div>
+                    <button id="MesPrev">&#9664;</button>
+                    <button id="MesSig">&#9654;</button>
+                </div>
+            </div>
+            
+            <div id="semana">
+                <div>Domingo</div>
+                <div>Lunes</div>
+                <div>Martes</div>
+                <div>Miercoles</div>
+                <div>Jueves</div>
+                <div>Viernes</div>
+                <div>Sabado</div>
+            </div>
+
+            <div id="calendario"></div>
+        </div>
+
+        <div id="NuevoEvento">
+            <h2>Nuevo Evento</h2>
+
+            <input id="TituloEvento" placeholder="Titulo del Evento"/>
+
+            <button id="saveButton">Guardar</button>
+            <button id="cancelButton">Cancelar</button>
+        </div>
+
+        <div id="deleteEventModal">
+            <h2>Evento</h2>
+
+            <p id="eventText"></p>
+
+            <button id="deleteButton">Delete</button>
+            <button id="closeButton">Close</button>
+        </div>
+        
+        <div id="modalBackDrop"></div>
+        
+        
+        <script src="./calendar-script.js"></script>
+    </body>
+</html>
